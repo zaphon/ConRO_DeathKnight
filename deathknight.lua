@@ -127,7 +127,7 @@ function ConRO.DeathKnight.Under10(_, timeShift, currentSpell, gcd, tChosen, pvp
 --Conditions
 	local _is_moving = ConRO:PlayerSpeed();
 	local _enemies_in_melee, _target_in_melee = ConRO:Targets("Melee");
-	local _target_in_10yrds = CheckInteractDistance("target", 3);
+	local _target_in_10yrds = ConRO:CheckInteractDistance("target", 3);
 
 --Warnings
 
@@ -165,7 +165,7 @@ function ConRO.DeathKnight.Under10Def(_, timeShift, currentSpell, gcd, tChosen, 
 --Conditions
 	local _is_moving 																															= ConRO:PlayerSpeed();
 	local _enemies_in_melee, _target_in_melee																			= ConRO:Targets("Melee");
-	local _target_in_10yrds 																											= CheckInteractDistance("target", 3);
+	local _target_in_10yrds 																											= ConRO:CheckInteractDistance("target", 3);
 
 --Warnings
 
@@ -237,7 +237,7 @@ function ConRO.DeathKnight.Blood(_, timeShift, currentSpell, gcd, tChosen, pvpCh
 --Conditions
 	local _is_moving = ConRO:PlayerSpeed();
 	local _enemies_in_melee, _target_in_melee = ConRO:Targets("Melee");
-	local _target_in_10yrds = CheckInteractDistance("target", 3);
+	local _target_in_10yrds = ConRO:CheckInteractDistance("target", 3);
 
 	local _Pet_summoned = ConRO:CallPet();
 
@@ -453,7 +453,7 @@ function ConRO.DeathKnight.BloodDef(_, timeShift, currentSpell, gcd, tChosen, pv
 --Conditions
 	local _is_moving 																															= ConRO:PlayerSpeed();
 	local _enemies_in_melee, _target_in_melee																			= ConRO:Targets("Melee");
-	local _target_in_10yrds 																											= CheckInteractDistance("target", 3);
+	local _target_in_10yrds 																											= ConRO:CheckInteractDistance("target", 3);
 
 --Rotations
 		if _SacrificialPact_RDY and _Player_Percent_Health <= 20 and _RaiseDead_CD > 60 then
@@ -568,7 +568,7 @@ function ConRO.DeathKnight.Frost(_, timeShift, currentSpell, gcd, tChosen, pvpCh
 --Conditions
 	local _is_moving = ConRO:PlayerSpeed();
 	local _enemies_in_melee, _target_in_melee = ConRO:Targets("Melee");
-	local _target_in_10yrds = CheckInteractDistance("target", 3);
+	local _target_in_10yrds = ConRO:CheckInteractDistance("target", 3);
 
 	local _Pet_summoned = ConRO:CallPet();
 
@@ -846,7 +846,7 @@ function ConRO.DeathKnight.FrostDef(_, timeShift, currentSpell, gcd, tChosen, pv
 --Conditions
 	local _is_moving = ConRO:PlayerSpeed();
 	local _enemies_in_melee, _target_in_melee = ConRO:Targets("Melee");
-	local _target_in_10yrds = CheckInteractDistance("target", 3);
+	local _target_in_10yrds = ConRO:CheckInteractDistance("target", 3);
 
 --Rotations
 		if _SacrificialPact_RDY and _Player_Percent_Health <= 20 and _RaiseDead_CD > 60 then
@@ -939,7 +939,7 @@ function ConRO.DeathKnight.Unholy(_, timeShift, currentSpell, gcd, tChosen, pvpC
 --Conditions
 	local _is_moving = ConRO:PlayerSpeed();
 	local _enemies_in_melee, _target_in_melee = ConRO:Targets("Melee");
-	local _target_in_10yrds = CheckInteractDistance("target", 3);
+	local _target_in_10yrds = ConRO:CheckInteractDistance("target", 3);
 	local _can_execute = _Target_Percent_Health <= 35;
 
 	local _Pet_summoned = ConRO:CallPet();
@@ -1134,7 +1134,7 @@ function ConRO.DeathKnight.UnholyDef(_, timeShift, currentSpell, gcd, tChosen, p
 --Conditions
 	local _is_moving 																															= ConRO:PlayerSpeed();
 	local _enemies_in_melee, _target_in_melee																			= ConRO:Targets("Melee");
-	local _target_in_10yrds 																											= CheckInteractDistance("target", 3);
+	local _target_in_10yrds 																											= ConRO:CheckInteractDistance("target", 3);
 
 	local _Pet_summoned 																													= ConRO:CallPet();
 	local _Pet_assist 																														= ConRO:PetAssist();
